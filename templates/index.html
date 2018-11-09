@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    首页
+{% endblock %}
+{%  block title%}首页{%  endblock %}
+{#<link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}" type="text/css">#}
+{% block main %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}" type="text/css">
+    <ul class="question-list-group">
+
+            <li>
+            <div class="avatar-group">
+                <img src="{{ url_for('static',filename='images/goodslogo.jpg') }}" width="38"  alt="" class="avatar">
+            </div>
+            <div>
+            <div class="question-group">
+                <p class="question-title"><a href="#"></a></p>
+                <p class="question-content"></p>
+                <div class="question-info">
+                    <sqan class="question-author" ></sqan>
+                    <span class="question-time"></span>
+                </div>
+            </div>
+            </div>
+        </li>
+    </ul>
+{% endblock %}
